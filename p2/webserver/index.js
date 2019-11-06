@@ -13,12 +13,17 @@ io.on('connection', function(socket){
   });
 
 	socket.on('connect-room', function(id,name){
-		socket.join(id)
+		socket.join(id);
     io.to(id).emit('join-message', name + ' has joined to room '+ id);
   });
 
 	socket.on('room-message', function(id,msg){
 		socket.broadcast.to(id).emit('room-message', msg);	
+	});
+
+	socket.on('disconnect-room', function(id, name){
+		socket.leave(id);
+		io.to(id).emit('room-message', name + ' has left the room');
 	});
 
 });

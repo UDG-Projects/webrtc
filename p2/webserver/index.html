@@ -31,18 +31,25 @@
   $(function () {
     var socket = io();
 		var currentRoom =0;
+		var currentNick = '';
     $('#messageForm').submit(function(e){
       e.preventDefault(); // prevents page reloading
       socket.emit('room-message', currentRoom, $('#m').val());
-      $('#messages').append($('<li>').text($('#m').val()));
+      $('#messages').append($('<li>').text('you: '+$('#m').val()));
       $('#m').val('');
       return false;
     });
 
  		$('#nickForm').submit(function(e){
       e.preventDefault(); // prevents page reloading
-			currentRoom = $('#room').val();     
-			socket.emit('connect-room', currentRoom, $('#nick').val());
+			
+			var tempRoom = $('#room').val(); 
+			if(currentRoom !=0 && tempRoom != currentRoom){
+					leaveRoom();
+			}
+			currentRoom=tempRoom;
+			currentNick = $('#nick').val()  ;
+			socket.emit('connect-room', currentRoom, currentNick);
       return false;
     });
 
@@ -57,7 +64,17 @@
 		socket.on('room-message', function(msg){
       $('#messages').append($('<li>').text(msg));
     });
-	
+
+		$(window).on("unload", function(e) {
+				leaveRoom();
+		});
+		
+		function leaveRoom(){
+			if (currentRoom != 0){
+						socket.emit('disconnect-room', currentRoom, currentNick);				
+				}
+		
+		}
   });
 </script>
   </body>
