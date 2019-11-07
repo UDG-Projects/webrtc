@@ -17,7 +17,7 @@ app.use(session({
 
 
 var auth = function(req,res,next){
-	if(req.session.user){
+	if(session.user){
 	  return next();
 	}else{
 	  return res.redirect('/');	
@@ -29,7 +29,7 @@ app.post('/login',function(req,res){
 	if(!req.body.nickname){
 		res.send('login failed');
 	}else {
-		req.session.user= req.body.nickname;
+		session.user= req.body.nickname;
 		res.redirect('/xat');
 		return; 
 	}
@@ -46,7 +46,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/xat', auth, function(req, res){
-  res.locals.nickname = session.user
+
   res.sendFile(__dirname + '/xat.html');
 });
 
@@ -55,7 +55,7 @@ app.get('/xat', auth, function(req, res){
 io.on('connection', function(socket){
 	
 	socket.on('chat message', function(msg){
-		socket.broadcast.emit('chat message', msg);
+		socket.broadcast.emit('chat message', session.user+':'+msg);
 	});
 
 	socket.on('connect-room', function(id,name){
@@ -64,7 +64,7 @@ io.on('connection', function(socket){
 	});
 
 	socket.on('room-message', function(id,msg){
-		socket.broadcast.to(id).emit('room-message', msg);	
+		socket.broadcast.to(id).emit('room-message', session.user+':'+msg);	
 	});
 
 	socket.on('disconnect-room', function(id, name){
