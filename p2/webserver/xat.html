@@ -35,7 +35,13 @@
 				
 				$('#messageForm').submit(function(e){
 					e.preventDefault(); // prevents page reloading
-					socket.emit('room-message', currentRoom, $('#m').val());
+					if(currentRoom ==0){
+						socket.emit('chat message', $('#m').val());
+					}
+					else{
+						socket.emit('room-message', currentRoom, $('#m').val());
+					}
+					
 					$('#messages').append($('<li>').text('you: '+$('#m').val()));
 					$('#m').val('');
 					return false;
@@ -72,7 +78,8 @@
 
 				function leaveRoom(){
 					if (currentRoom != 0){
-					socket.emit('disconnect-room', currentRoom, currentNick);				
+						socket.emit('disconnect-room', currentRoom, currentNick);
+						currentRoom = 0;				
 					}
 				}
 
