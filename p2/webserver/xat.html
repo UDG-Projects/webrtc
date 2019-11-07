@@ -60,7 +60,9 @@
 				});
 
 				socket.on('chat message', function(msg){
-					$('#messages').append($('<li>').text(msg));
+					if(currentRoom == 0){
+						$('#messages').append($('<li>').text(msg));
+					}
 				});
 
 				socket.on('join-message',function(msg){
@@ -68,7 +70,9 @@
 				});
 
 				socket.on('room-message', function(msg){
-					$('#messages').append($('<li>').text(msg));
+					if(currentRoom != 0){					
+						$('#messages').append($('<li>').text(msg));
+					}
 				});
 
 				$(window).on("unload", function(e) {
