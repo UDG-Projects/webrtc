@@ -17,7 +17,6 @@ app.use(session({
 
 var auth = function(req,res,next){
 	if(req.session.user){
-console.log("next");
 	  return next();
 	}else{
 	  return res.redirect('/');	
@@ -42,23 +41,40 @@ app.get('/logout',function(req,res){
 });
 
 app.get('/', function(req, res){
-console.log("index");
   res.sendFile(__dirname + '/index.html');
 });
 
 app.get('/xat', auth, function(req, res){
-console.log("xat")
-console.log(__dirname)
   res.sendFile(__dirname + '/xat.html');
 });
 
 
 
 io.on('connection', function(socket){
-  socket.on('chat message', function(msg){
-  	socket.broadcast.emit('chat message', msg);
-  });
+	
+	socket.on('chat message', function(msg){
+		socket.broadcast.emit('chat message', msg);
+	});
+
+	socket.on('connect-room', function(id,name){
+		socket.join(id);
+		io.to(id).emit('join-message', name + ' has joined to room '+ id);
+	});
+
+	socket.on('room-message', function(id,msg){
+		socket.broadcast.to(id).emit('room-message', msg);	
+	});
+
+	socket.on('disconnect-room', function(id, name){
+		socket.leave(id);
+		io.to(id).emit('room-message', name + ' has left the room');
+	});
+
 });
+
+
+
+
 
 
 http.listen(3000, function(){
