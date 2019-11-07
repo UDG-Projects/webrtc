@@ -29,9 +29,10 @@
 		<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
 		<script>
 			$(function () {
+				console.log(<%-JSON.stringify(nickname)%>);
 				var socket = io();
 				var currentRoom =0;
-				var currentNick = '';
+				
 				
 				$('#messageForm').submit(function(e){
 					e.preventDefault(); // prevents page reloading

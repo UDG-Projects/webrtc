@@ -8,6 +8,7 @@ var session = require('express-session');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+
 app.use(session({
   secret: 'keyboard cat',
   resave: false,
@@ -45,6 +46,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/xat', auth, function(req, res){
+  res.locals.nickname = session.user
   res.sendFile(__dirname + '/xat.html');
 });
 
