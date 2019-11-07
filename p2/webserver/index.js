@@ -71,18 +71,18 @@ io.on('connection', function(socket){
 		socket.broadcast.emit('chat message', socket.handshake.session.user+':'+msg);
 	});
 
-	socket.on('connect-room', function(id,name){
+	socket.on('connect-room', function(id){
 		socket.join(id);
-		io.to(id).emit('join-message', name + ' has joined to room '+ id);
+		io.to(id).emit('join-message', socket.handshake.session.user + ' has joined to room '+ id);
 	});
 
 	socket.on('room-message', function(id,msg){
 		socket.broadcast.to(id).emit('room-message', socket.handshake.session.user+':'+msg);	
 	});
 
-	socket.on('disconnect-room', function(id, name){
+	socket.on('disconnect-room', function(id){
 		socket.leave(id);
-		io.to(id).emit('room-message', name + ' has left the room');
+		io.to(id).emit('room-message', socket.handshake.session.user + ' has left the room');
 	});
 
 });
