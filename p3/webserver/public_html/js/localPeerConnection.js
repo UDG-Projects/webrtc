@@ -5,31 +5,31 @@ var SOCKET_ADDR = xxxx;
 
 // JavaScript variables holding stream, connection information, send and receive channels
 var localStream, localPeerConnection, remotePeerConnection, sendChannel, receiveChannel, socket, remoteSocketId;
-var callDone = xxxx;
+var callDone = false;
 
 // JavaScript variables associated with chat buttons in the page
-var sendButton = document.getElementById("xxxx");
+var sendButton = document.getElementById("sendButton");
 
 // JavaScript variables associated with HTML5 video elements in the page
-var localVideo = document.getElementById("xxxx");
-var remoteVideo = document.getElementById("xxxx");
+var localVideo = document.getElementById("localVideo");
+var remoteVideo = document.getElementById("remoteVideo");
 
 // JavaScript variables associated with call management buttons in the page
-var startButton = document.getElementById("xxxx");
-var callButton = document.getElementById("xxxx");
-var hangupButton = document.getElementById("xxxx");
+var startButton = document.getElementById("startButton");
+var callButton = document.getElementById("callButton");
+var hangupButton = document.getElementById("hangupButton");
 
 // Just allow the user to click on the 'Call' button at start-up
-sendButton.disabled = xxxx;
-startButton.disabled = xxxx;
-callButton.disabled = xxxx;
-hangupButton.disabled = xxxx;
+sendButton.disabled = true;
+startButton.disabled = false;
+callButton.disabled = true;
+hangupButton.disabled = true;
 
 // Associate JavaScript handlers with click events on the buttons
 sendButton.onclick = sendData;
-startButton.onclick = xxxx;
-callButton.onclick = xxxx;
-hangupButton.onclick = xxxx;
+startButton.onclick = start;
+callButton.onclick = call;
+hangupButton.onclick = hangup;
 
 // This are the required sources navigator must have to make a videoconference
 const constraints = { video:true, audio:true };
@@ -53,14 +53,14 @@ function log(text) {
 // Callback in case of success of the getUserMedia() call
 function successCallback(stream){
   log("Received local stream");
-  callButton.disabled = false;
+  callButton.disabled = true;
   // Associate the local video element with the retrieved stream
   localVideo.srcObject = stream;
   localVideo.muted=true;
 
 	localStream = stream;
 	// Connect to signalling server
-	socket = xxxx;
+	socket = io();
 	lib.setSocket(socket);
 
 	socket.on('connect', function () {
@@ -81,22 +81,22 @@ function successCallback(stream){
 			if(!callDone) call();
 
 			// Create the remote PeerConnection object
-			  remotePeerConnection = xxxx;
+			  remotePeerConnection = RTCPeerConnection();
 			  lib.setRemotePeerConnection(remotePeerConnection);
 			  log("Created remote peer connection object remotePeerConnection");
 			  // Add a handler associated with ICE protocol events...
-			  remotePeerConnection.onicecandidate = xxxx;
+			  remotePeerConnection.onicecandidate = lib.gotRemoteIceCandidate;
 			  // ...and a second handler to be activated as soon as the remote stream becomes available
 			  //remotePeerConnection.onaddstream = gotRemoteStream;
-			  remotePeerConnection.ontrack = xxxx;
+			  remotePeerConnection.ontrack = gotRemoteTrack
 
 			  // ...and data channel creation event
-			  remotePeerConnection.ondatachannel = xxxx;
+			  remotePeerConnection.ondatachannel = lib.gotReceiveChannel;
 
 			  // ...do the same with the 'pseudo-remote' PeerConnection
 			  // Note well: this is the part that will have to be changed if you want the communicating peers to become
 			  // remote (which calls for the setup of a proper signaling channel)
-			  remotePeerConnection.setRemoteDescription(xxxx);
+			  remotePeerConnection.setRemoteDescription(message.data);
 
 			  // Create the Answer to the received Offer based on the 'local' description
 			  remotePeerConnection.createAnswer(xxxx);
@@ -133,7 +133,7 @@ function successCallback(stream){
 function start() {
   log("Requesting local stream");
   // First of all, disable the 'Start' button on the page
-  startButton.disabled = xxxx;
+  startButton.disabled = true;
   // Get ready to deal with different browser vendors...
   navigator.getUserMedia = navigator.getUserMedia;
    // || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
@@ -159,11 +159,11 @@ function sendData() {
 // Function associated with clicking on the 'Call' button
 // This is enabled upon successful completion of the 'Start' button handler
 function call() {
-  callDone=xxxx;
+  callDone=true;
   // First of all, disable the 'Call' button on the page...
-  callButton.disabled = xxxx;
+  callButton.disabled = true;
   // ...and enable the 'Hangup' button
-  hangupButton.disabled = xxxx;
+  hangupButton.disabled = false;
   log("Starting call -> getVideoTracks");
 
   if (navigator.webkitGetUserMedia) {
@@ -183,7 +183,7 @@ function call() {
   log("RTCPeerConnection object: " + RTCPeerConnection);
 
   // Create the local PeerConnection object
-  localPeerConnection = xxxx;
+  localPeerConnection = RTCPeerConnection();
   lib.setLocalPeerConnection(localPeerConnection);
   log("Created local peer connection object localPeerConnection, with Data Channel");
 
@@ -198,7 +198,7 @@ function call() {
 	  log('createDataChannel() failed with following message: ' + e.message);
   }
   // Add a handler associated with ICE protocol events
-  localPeerConnection.onicecandidate = xxxx;
+  localPeerConnection.onicecandidate = gotLocalIceCandidate;
 
   // Associate handlers with data channel events
   sendChannel.onopen = lib.handleSendChannelStateChange;
