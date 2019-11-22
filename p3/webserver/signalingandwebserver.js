@@ -10,11 +10,13 @@ var fs = require('fs');
 var http = require('http');
 var https = require('https');
 
+const PORT = 443
+
 var app = express();
-/*var server = https.createServer({
-        key: fs.readFileSync(xxxx),
-        cert: fs.readFileSync(xxxx),
-}, app).listen(xxxx, function() { console.log('https web server (signaling + html) is listening')});*/
+var server = https.createServer({
+        key: fs.readFileSync('certs/cert.key'),
+        cert: fs.readFileSync('certs/cert.crt'),
+}, app).listen(PORT, function() { console.log('https web server (signaling + html) is listening')});
 
 
 var server = http.createServer(app);
@@ -79,7 +81,3 @@ io.sockets.on('connection', function (socket){
 });
 
 
-
-server.listen(3000, function(){
-  console.log('listening on *:3000');
-});
