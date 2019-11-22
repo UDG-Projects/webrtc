@@ -1,7 +1,7 @@
 // Access to localPeerConnection library
 var lib = new localPeerConnectionLib();
 
-var SOCKET_ADDR = xxxx;
+//var SOCKET_ADDR = xxxx;
 
 // JavaScript variables holding stream, connection information, send and receive channels
 var localStream, localPeerConnection, remotePeerConnection, sendChannel, receiveChannel, socket, remoteSocketId;
@@ -99,7 +99,7 @@ function successCallback(stream){
 			  remotePeerConnection.setRemoteDescription(message.data);
 
 			  // Create the Answer to the received Offer based on the 'local' description
-			  remotePeerConnection.createAnswer(xxxx);
+			  remotePeerConnection.createAnswer(message.data);
 
 	  }
 	  else if(message.type=="answer"){

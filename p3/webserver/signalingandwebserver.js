@@ -11,19 +11,32 @@ var http = require('http');
 var https = require('https');
 
 var app = express();
-var server = https.createServer({
+/*var server = https.createServer({
         key: fs.readFileSync(xxxx),
         cert: fs.readFileSync(xxxx),
-}, app).listen(xxxx, function() { console.log('https web server (signaling + html) is listening')});
+}, app).listen(xxxx, function() { console.log('https web server (signaling + html) is listening')});*/
+
+
+var server = http.createServer(app);
 
 // El servidor web https com a servidor web de l'HTML+JS
 
-xxxx
+//xxxx
 
 // El servidor web https com a servidor de senyalització
 
+
 // Es fa servir socket.io
 var io = require('socket.io').listen(server);
+
+
+app.use('/js',express.static(__dirname + '/public_html/js'));
+app.get('/', function(req, res){
+  res.sendFile(__dirname + '/public_html/index.html');
+});
+
+
+
 
 // Vector on es guardem els identificadors dels usuaris
 var usuarisConnectats = [];
@@ -63,4 +76,10 @@ io.sockets.on('connection', function (socket){
 			usuarisConnectats = [];
 		}
 	});
+});
+
+
+
+server.listen(3000, function(){
+  console.log('listening on *:3000');
 });
