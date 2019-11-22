@@ -19,7 +19,7 @@ var server = https.createServer({
 }, app).listen(PORT, function() { console.log('https web server (signaling + html) is listening')});
 
 
-var server = http.createServer(app);
+//var server = http.createServer(app);
 
 // El servidor web https com a servidor web de l'HTML+JS
 
@@ -46,7 +46,8 @@ var usuarisDesconnectats = 0;
 
 var usuari1, usuari2; // els dos usuaris de l'aplicació
 
-io.sockets.on('connection', function (socket){
+io.on('connection', function (socket){
+
 	usuarisConnectats.push(socket.id); // s'ha connectat un usuari, socket.id té l'identificador
 	console.log("USUARI ID -> " + socket.id + " || CONNECT");
 	if (usuarisConnectats.length > 1){ // quan els dos usuaris s'han connectat al servidor
@@ -59,6 +60,7 @@ io.sockets.on('connection', function (socket){
 	}
 	// les dades contenen el receiver socket id i el missatge; el que rebem ho reenviem al destí
 	socket.on('message', function (message) {
+		console.log(message)
 		socket.to(message.to).emit('message', message);
 	});
 

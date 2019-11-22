@@ -1,7 +1,8 @@
 // Access to localPeerConnection library
 var lib = new localPeerConnectionLib();
 
-//var SOCKET_ADDR = xxxx;
+var SOCKET_ADDR = {'iceServers':[{url:'stun:stun.l.google.com:19302'}]};
+console.log(SOCKET_ADDR)
 
 // JavaScript variables holding stream, connection information, send and receive channels
 var localStream, localPeerConnection, remotePeerConnection, sendChannel, receiveChannel, socket, remoteSocketId;
@@ -52,6 +53,7 @@ function log(text) {
 
 // Callback in case of success of the getUserMedia() call
 function successCallback(stream){
+  log(SOCKET_ADDR);
   log("Received local stream");
   callButton.disabled = true;
   // Associate the local video element with the retrieved stream
@@ -66,7 +68,7 @@ function successCallback(stream){
 	socket.on('connect', function () {
 		console.log("CONNECTED");
 	});
-
+	console.log(socket.conn)
 	// Receive message from the other peer via the signalling server
 	socket.on('message', function (message){
 	  console.log('Received message:', message);
@@ -81,7 +83,7 @@ function successCallback(stream){
 			if(!callDone) call();
 
 			// Create the remote PeerConnection object
-			  remotePeerConnection = RTCPeerConnection();
+			  remotePeerConnection = new RTCPeerConnection();
 			  lib.setRemotePeerConnection(remotePeerConnection);
 			  log("Created remote peer connection object remotePeerConnection");
 			  // Add a handler associated with ICE protocol events...
@@ -96,10 +98,10 @@ function successCallback(stream){
 			  // ...do the same with the 'pseudo-remote' PeerConnection
 			  // Note well: this is the part that will have to be changed if you want the communicating peers to become
 			  // remote (which calls for the setup of a proper signaling channel)
-			  remotePeerConnection.setRemoteDescription(message.data);
+			  remotePeerConnection.setRemoteDescription(new RTCSessionDescription(message.data));
 
 			  // Create the Answer to the received Offer based on the 'local' description
-			  remotePeerConnection.createAnswer(message.data);
+			  remotePeerConnection.createAnswer(lib.gotRemoteDescription, lib.onSignalingError);
 
 	  }
 	  else if(message.type=="answer"){
@@ -152,7 +154,7 @@ function onError(error){
 //Handler for sending data to the 'remote' peer
 function sendData() {
   var data = document.getElementById("dataChannelSend").value;
-  //xxxx;
+  sendChannel.send(data);
   log('Sent data: ' + data);
 }
 
@@ -183,7 +185,7 @@ function call() {
   log("RTCPeerConnection object: " + RTCPeerConnection);
 
   // Create the local PeerConnection object
-  localPeerConnection = RTCPeerConnection();
+  localPeerConnection =  new RTCPeerConnection();
   lib.setLocalPeerConnection(localPeerConnection);
   log("Created local peer connection object localPeerConnection, with Data Channel");
 
@@ -198,7 +200,7 @@ function call() {
 	  log('createDataChannel() failed with following message: ' + e.message);
   }
   // Add a handler associated with ICE protocol events
-  localPeerConnection.onicecandidate = gotLocalIceCandidate;
+  localPeerConnection.onicecandidate = lib.gotLocalIceCandidate;
 
   // Associate handlers with data channel events
   sendChannel.onopen = lib.handleSendChannelStateChange;
