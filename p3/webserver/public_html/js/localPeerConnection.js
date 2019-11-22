@@ -88,7 +88,7 @@ function successCallback(stream){
 			  remotePeerConnection.onicecandidate = lib.gotRemoteIceCandidate;
 			  // ...and a second handler to be activated as soon as the remote stream becomes available
 			  //remotePeerConnection.onaddstream = gotRemoteStream;
-			  remotePeerConnection.ontrack = gotRemoteTrack
+			  remotePeerConnection.ontrack = gotRemoteTrack;
 
 			  // ...and data channel creation event
 			  remotePeerConnection.ondatachannel = lib.gotReceiveChannel;
@@ -152,7 +152,7 @@ function onError(error){
 //Handler for sending data to the 'remote' peer
 function sendData() {
   var data = document.getElementById("dataChannelSend").value;
-  xxxx;
+  //xxxx;
   log('Sent data: ' + data);
 }
 
