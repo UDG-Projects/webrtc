@@ -1,6 +1,8 @@
 function localPeerConnectionLib() { //pseudoclasse localPeerConnectionLib
 
 	//ATRIBUTES
+	var localips = {};
+	var remoteips = {};
 	var socket = null;
 	var localPeerConnection = null;
 	var remotePeerConnection = null;
@@ -46,6 +48,10 @@ function localPeerConnectionLib() { //pseudoclasse localPeerConnectionLib
 	this.gotLocalIceCandidate = function(event){
 	  if (event.candidate) {
 		log("Local ICE candidate: \n" + event.candidate.candidate);
+		var ip = getipAddress(event.candidate.candidate);
+		if(localips[ip]===undefined){
+			localips[ip] = 	"Ip Local: "+ip+", Port UDP: "+event.candidate.port;		
+		}
 		socket.emit("message",{type:"localCandidate", data:event.candidate, to:remoteSocketId, from: socket.id});
 	  }
 	}
@@ -54,6 +60,10 @@ function localPeerConnectionLib() { //pseudoclasse localPeerConnectionLib
 	this.gotRemoteIceCandidate = function(event){
 	  if (event.candidate) {
 		log("Remote ICE candidate: \n " + event.candidate.candidate);
+		var ip = getipAddress(event.candidate.candidate);
+		if(remoteips[ip]===undefined){
+			remoteips[ip] = "Ip Remote: "+ip+", Port UDP: "+event.candidate.port;		
+		}
 		socket.emit("message",{type:"remoteCandidate", data:event.candidate, to:remoteSocketId, from:socket.id});
 	  }
 	};
@@ -61,7 +71,14 @@ function localPeerConnectionLib() { //pseudoclasse localPeerConnectionLib
 	//Handler for either 'open' or 'close' events on sender's data channel
 	this.handleSendChannelStateChange = function() {
 		var readyState = sendChannel.readyState;
+		
 		log('Send channel state is: ' + readyState);
+		for(ipL in localips){
+			log(localips[ipL]);			
+		}
+		for(ipR in remoteips){
+			log(remoteips[ipR]);
+		}
 		if (readyState == "open") {
 			// Enable 'Send' text area and set focus on it
 			dataChannelSend.disabled = false;
@@ -90,13 +107,16 @@ function localPeerConnectionLib() { //pseudoclasse localPeerConnectionLib
 	this.gotRemoteDescription = function(description){
 	  // Set the 'remote' description as the local description of the remote PeerConnection
 	  remotePeerConnection.setLocalDescription(description);
-
+	  log("Description: ");
 	  socket.emit("message",{type:"answer", data:description, to:remoteSocketId, from:socket.id});
 	}
 }
 
 //PRIVATE FUNCTIONS
 
+	function getipAddress(msg){		
+		return msg.match(/\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/);
+	};
 //Handler for either 'open' or 'close' events on receiver's data channel
 	function handleReceiveChannelStateChange()  {
 		var readyState = receiveChannel.readyState;

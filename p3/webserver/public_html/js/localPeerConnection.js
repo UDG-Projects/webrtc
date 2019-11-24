@@ -99,7 +99,6 @@ function successCallback(stream){
 			  // Note well: this is the part that will have to be changed if you want the communicating peers to become
 			  // remote (which calls for the setup of a proper signaling channel)
 			  remotePeerConnection.setRemoteDescription(new RTCSessionDescription(message.data));
-
 			  // Create the Answer to the received Offer based on the 'local' description
 			  remotePeerConnection.createAnswer(lib.gotRemoteDescription, lib.onSignalingError);
 
@@ -112,6 +111,7 @@ function successCallback(stream){
 	  else if(message.type=="localCandidate"){
 			// Add candidate to the remote PeerConnection
 			remotePeerConnection.addIceCandidate(new RTCIceCandidate({sdpMLineIndex:message.data.sdpMLineIndex,candidate:message.data.candidate}));
+
 	  }
 	  else if(message.type=="remoteCandidate"){
 			// Add candidate to the local PeerConnection
