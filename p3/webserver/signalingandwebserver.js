@@ -60,6 +60,8 @@ io.on('connection', function (socket){
 	}
 	// les dades contenen el receiver socket id i el missatge; el que rebem ho reenviem al destí
 	socket.on('message', function (message) {
+		console.log("Recieved message :" +message.type +" from " + message.from);
+		console.log("DATA: " + message.data);
 		console.log(message)
 		socket.to(message.to).emit('message', message);
 	});
