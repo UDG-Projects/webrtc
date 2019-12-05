@@ -112,6 +112,7 @@ function successCallback(stream){
 			log("Answer from remotePeerConnection: \n" + message.data.sdp);
 			  // Conversely, set the 'remote' description as the remote description of the local PeerConnection
 			  localPeerConnection.setRemoteDescription(new RTCSessionDescription(message.data));
+			  
 	  }
 	  else if(message.type=="localCandidate"){
 			// Add candidate to the remote PeerConnection
@@ -260,3 +261,6 @@ function gotRemoteTrack(track){
   remoteVideo.srcObject = track.streams[0];
   log("Received remote stream");
 }
+
+
+

@@ -101,12 +101,13 @@ function successCallback(stream){
 			  remotePeerConnection.setRemoteDescription(new RTCSessionDescription(message.data));
 			  // Create the Answer to the received Offer based on the 'local' description
 			  remotePeerConnection.createAnswer(lib.gotRemoteDescription, lib.onSignalingError);
-
+			  getConnectionDetails(remotePeerConnection).then(console.log.bind(console));
 	  }
 	  else if(message.type=="answer"){
 			log("Answer from remotePeerConnection: \n" + message.data.sdp);
 			  // Conversely, set the 'remote' description as the remote description of the local PeerConnection
 			  localPeerConnection.setRemoteDescription(new RTCSessionDescription(message.data));
+			  
 	  }
 	  else if(message.type=="localCandidate"){
 			// Add candidate to the remote PeerConnection
@@ -253,3 +254,5 @@ function gotRemoteTrack(track){
   remoteVideo.srcObject = track.streams[0];
   log("Received remote stream");
 }
+
+
