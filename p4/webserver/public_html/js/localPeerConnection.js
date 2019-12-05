@@ -1,8 +1,7 @@
 // Access to localPeerConnection library
 var lib = new localPeerConnectionLib();
 
-var SOCKET_ADDR = {'iceServers':[{url:'stun:stun.l.google.com:19302'}]};
-console.log(SOCKET_ADDR)
+
 
 // JavaScript variables holding stream, connection information, send and receive channels
 var localStream, localPeerConnection, remotePeerConnection, sendChannel, receiveChannel, socket, remoteSocketId;
@@ -44,7 +43,13 @@ var pc_constraints = {
 			             ]};
 
 // This is an optional configuration string, associated with NAT traversal setup
-var servers = null;
+var servers = {
+  iceServers : [{
+      "urls": "turn:84.88.154.196:40000?transport=udp",
+      "username": "usuari",
+      "credential": "patata"
+   }]
+};
 
 // Utility function for logging information to the JavaScript console
 function log(text) {
@@ -53,7 +58,7 @@ function log(text) {
 
 // Callback in case of success of the getUserMedia() call
 function successCallback(stream){
-  log(SOCKET_ADDR);
+
   log("Received local stream");
   callButton.disabled = true;
   // Associate the local video element with the retrieved stream
@@ -83,7 +88,7 @@ function successCallback(stream){
 			if(!callDone) call();
 
 			// Create the remote PeerConnection object
-			  remotePeerConnection = new RTCPeerConnection();
+			  remotePeerConnection = new RTCPeerConnection(servers);
 			  lib.setRemotePeerConnection(remotePeerConnection);
 			  log("Created remote peer connection object remotePeerConnection");
 			  // Add a handler associated with ICE protocol events...
@@ -185,7 +190,9 @@ function call() {
   log("RTCPeerConnection object: " + RTCPeerConnection);
 
   // Create the local PeerConnection object
-  localPeerConnection =  new RTCPeerConnection();
+  localPeerConnection =  new RTCPeerConnection(servers);
+console.log("creat conn")
+  console.log("afegida configuracio ice")
   lib.setLocalPeerConnection(localPeerConnection);
   log("Created local peer connection object localPeerConnection, with Data Channel");
 
