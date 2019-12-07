@@ -86,6 +86,9 @@ function localPeerConnectionLib() { //pseudoclasse localPeerConnectionLib
 			dataChannelSend.placeholder = "";
 			// Enable both 'Send' and 'Close' buttons
 			sendButton.disabled = false;
+			if(localPeerConnection!=null && remotePeerConnection!=null){
+				getConnectionDetails(localPeerConnection).then(log.bind(console));
+			}
 		} else { // event MUST be 'close', if we are here...
 			// Disable 'Send' text area
 			dataChannelSend.disabled = true;
@@ -131,3 +134,62 @@ function localPeerConnectionLib() { //pseudoclasse localPeerConnectionLib
 		// Clean 'Send' text area in the HTML page
 		document.getElementById("dataChannelSend").value = '';
 	};
+
+function getConnectionDetails(peerConnection){
+
+
+  var connectionDetails = {};   // the final result object.
+
+  if(window.chrome){  // checking if chrome
+
+    /*var reqFields = [   'googLocalAddress',
+                        'googLocalCandidateType',   
+                        'googRemoteAddress',
+                        'googRemoteCandidateType'
+                    ];
+    return new Promise(function(resolve, reject){
+      peerConnection.getStats(function(stats){
+	var selectedCandidatePair;
+	stats.result().forEach(function(stat){	
+		if(stat.selected){
+			selectedCandidatePair=stat;		
+		}
+	});
+	console.log(selectedCandidatePair)
+        var filtered = stats.result().filter(function(e){return e.id.indexOf('Conn-audio')==0 && e.stat('googActiveConnection')=='true'})[0];
+        if(!filtered) return reject('Something is wrong...');
+        reqFields.forEach(function(e){connectionDetails[e.replace('goog', '')] = filtered.stat(e)});
+        resolve(connectionDetails);
+      });
+    });/
+
+  }else{
+    return peerConnection.getStats(null).then(function(stats){
+	var selectedCandidatePair; 
+	stats.forEach(function(stat){	
+		if(stat.selected){
+			selectedCandidatePair=stat;		
+		}
+	});
+	
+	var localICE, remoteICE;
+	stats.forEach(function(stat){
+		if(stat.id==selectedCandidatePair.localCandidateId){
+			localICE=stat;		
+		}
+		if(stat.id==selectedCandidatePair.remoteCandidateId){
+			remoteICE=stat;		
+		}
+			
+	});
+
+        connectionDetails.LocalAddress = [localICE.address, localICE.port].join(':');
+        connectionDetails.RemoteAddress = [remoteICE.address, remoteICE.port].join(':');
+        connectionDetails.LocalCandidateType = localICE.candidateType;
+        connectionDetails.RemoteCandidateType = remoteICE.candidateType;
+        return connectionDetails;
+    });
+
+  }
+}
+
