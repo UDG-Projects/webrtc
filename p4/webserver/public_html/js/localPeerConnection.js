@@ -45,7 +45,7 @@ var pc_constraints = {
 // This is an optional configuration string, associated with NAT traversal setup
 var servers = {
   iceServers : [{
-      "urls": "turn:84.88.154.196:40000?transport=udp",
+      "urls": "turn:bullixou.ddns.net:5000?transport=udp",
       "username": "usuari",
       "credential": "patata"
    }]

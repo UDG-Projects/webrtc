@@ -1,0 +1,1052 @@
+USUARI ID -> WoCe4-2npPfvqheiAAAC || CONNECT
+USUARI ID -> CBA9IHxMDIqW5P75AAAD || CONNECT
+Recieved message :offer from CBA9IHxMDIqW5P75AAAD
+DATA: [object Object]
+{ type: 'offer',
+  data: 
+   { type: 'offer',
+     sdp: 'v=0\r\no=mozilla...THIS_IS_SDPARTA-71.0 812624223428409680 0 IN IP4 0.0.0.0\r\ns=-\r\nt=0 0\r\na=fingerprint:sha-256 58:64:90:A7:45:68:13:A0:5A:43:32:D9:85:58:A2:19:88:22:DD:05:A9:2A:A8:A4:54:0F:61:D5:44:1B:E0:16\r\na=group:BUNDLE 0 1 2\r\na=ice-options:trickle\r\na=msid-semantic:WMS *\r\nm=audio 9 UDP/TLS/RTP/SAVPF 109 9 0 8 101\r\nc=IN IP4 0.0.0.0\r\na=sendrecv\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2/recvonly urn:ietf:params:rtp-hdrext:csrc-audio-level\r\na=extmap:3 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=fmtp:109 maxplaybackrate=48000;stereo=1;useinbandfec=1\r\na=fmtp:101 0-15\r\na=ice-pwd:e24329203c1d65bbf7dbb2170495e05b\r\na=ice-ufrag:cb6015a4\r\na=mid:0\r\na=msid:{56636f82-ed26-4997-8919-dad13a1e3c15} {006d383f-e971-46e3-a80b-228217dce7d7}\r\na=rtcp-mux\r\na=rtpmap:109 opus/48000/2\r\na=rtpmap:9 G722/8000/1\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:101 telephone-event/8000/1\r\na=setup:actpass\r\na=ssrc:3084186870 cname:{aff5b243-d4f7-4590-b4a3-56b174a1713e}\r\nm=video 9 UDP/TLS/RTP/SAVPF 120 121 126 97\r\nc=IN IP4 0.0.0.0\r\na=sendrecv\r\na=extmap:3 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:4 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:5 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:6/recvonly http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=fmtp:126 profile-level-id=42e01f;level-asymmetry-allowed=1;packetization-mode=1\r\na=fmtp:97 profile-level-id=42e01f;level-asymmetry-allowed=1\r\na=fmtp:120 max-fs=12288;max-fr=60\r\na=fmtp:121 max-fs=12288;max-fr=60\r\na=ice-pwd:e24329203c1d65bbf7dbb2170495e05b\r\na=ice-ufrag:cb6015a4\r\na=mid:1\r\na=msid:{56636f82-ed26-4997-8919-dad13a1e3c15} {27311d62-e1b7-4f1d-83e5-0d603a443a05}\r\na=rtcp-fb:120 nack\r\na=rtcp-fb:120 nack pli\r\na=rtcp-fb:120 ccm fir\r\na=rtcp-fb:120 goog-remb\r\na=rtcp-fb:121 nack\r\na=rtcp-fb:121 nack pli\r\na=rtcp-fb:121 ccm fir\r\na=rtcp-fb:121 goog-remb\r\na=rtcp-fb:126 nack\r\na=rtcp-fb:126 nack pli\r\na=rtcp-fb:126 ccm fir\r\na=rtcp-fb:126 goog-remb\r\na=rtcp-fb:97 nack\r\na=rtcp-fb:97 nack pli\r\na=rtcp-fb:97 ccm fir\r\na=rtcp-fb:97 goog-remb\r\na=rtcp-mux\r\na=rtpmap:120 VP8/90000\r\na=rtpmap:121 VP9/90000\r\na=rtpmap:126 H264/90000\r\na=rtpmap:97 H264/90000\r\na=setup:actpass\r\na=ssrc:2695829862 cname:{aff5b243-d4f7-4590-b4a3-56b174a1713e}\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=sendrecv\r\na=ice-pwd:e24329203c1d65bbf7dbb2170495e05b\r\na=ice-ufrag:cb6015a4\r\na=mid:2\r\na=setup:actpass\r\na=sctp-port:5000\r\na=max-message-size:1073741823\r\n' },
+  to: 'WoCe4-2npPfvqheiAAAC',
+  from: 'CBA9IHxMDIqW5P75AAAD' }
+Recieved message :localCandidate from CBA9IHxMDIqW5P75AAAD
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:0 1 UDP 2122252543 192.168.56.1 49234 typ host',
+     sdpMid: '2',
+     sdpMLineIndex: 2,
+     usernameFragment: 'cb6015a4' },
+  to: 'WoCe4-2npPfvqheiAAAC',
+  from: 'CBA9IHxMDIqW5P75AAAD' }
+Recieved message :localCandidate from CBA9IHxMDIqW5P75AAAD
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:1 1 UDP 2122187007 192.168.1.130 49235 typ host',
+     sdpMid: '2',
+     sdpMLineIndex: 2,
+     usernameFragment: 'cb6015a4' },
+  to: 'WoCe4-2npPfvqheiAAAC',
+  from: 'CBA9IHxMDIqW5P75AAAD' }
+Recieved message :localCandidate from CBA9IHxMDIqW5P75AAAD
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:2 1 TCP 2105524479 192.168.56.1 9 typ host tcptype active',
+     sdpMid: '2',
+     sdpMLineIndex: 2,
+     usernameFragment: 'cb6015a4' },
+  to: 'WoCe4-2npPfvqheiAAAC',
+  from: 'CBA9IHxMDIqW5P75AAAD' }
+Recieved message :localCandidate from CBA9IHxMDIqW5P75AAAD
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:3 1 TCP 2105458943 192.168.1.130 9 typ host tcptype active',
+     sdpMid: '2',
+     sdpMLineIndex: 2,
+     usernameFragment: 'cb6015a4' },
+  to: 'WoCe4-2npPfvqheiAAAC',
+  from: 'CBA9IHxMDIqW5P75AAAD' }
+Recieved message :localCandidate from CBA9IHxMDIqW5P75AAAD
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: '',
+     sdpMid: '2',
+     sdpMLineIndex: 2,
+     usernameFragment: 'cb6015a4' },
+  to: 'WoCe4-2npPfvqheiAAAC',
+  from: 'CBA9IHxMDIqW5P75AAAD' }
+Recieved message :localCandidate from CBA9IHxMDIqW5P75AAAD
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:0 1 UDP 2122252543 192.168.56.1 49236 typ host',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: 'cb6015a4' },
+  to: 'WoCe4-2npPfvqheiAAAC',
+  from: 'CBA9IHxMDIqW5P75AAAD' }
+Recieved message :localCandidate from CBA9IHxMDIqW5P75AAAD
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:1 1 UDP 2122187007 192.168.1.130 49237 typ host',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: 'cb6015a4' },
+  to: 'WoCe4-2npPfvqheiAAAC',
+  from: 'CBA9IHxMDIqW5P75AAAD' }
+Recieved message :localCandidate from CBA9IHxMDIqW5P75AAAD
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:2 1 TCP 2105524479 192.168.56.1 9 typ host tcptype active',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: 'cb6015a4' },
+  to: 'WoCe4-2npPfvqheiAAAC',
+  from: 'CBA9IHxMDIqW5P75AAAD' }
+Recieved message :localCandidate from CBA9IHxMDIqW5P75AAAD
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:3 1 TCP 2105458943 192.168.1.130 9 typ host tcptype active',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: 'cb6015a4' },
+  to: 'WoCe4-2npPfvqheiAAAC',
+  from: 'CBA9IHxMDIqW5P75AAAD' }
+Recieved message :localCandidate from CBA9IHxMDIqW5P75AAAD
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:0 2 UDP 2122252542 192.168.56.1 49238 typ host',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: 'cb6015a4' },
+  to: 'WoCe4-2npPfvqheiAAAC',
+  from: 'CBA9IHxMDIqW5P75AAAD' }
+Recieved message :localCandidate from CBA9IHxMDIqW5P75AAAD
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:1 2 UDP 2122187006 192.168.1.130 49239 typ host',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: 'cb6015a4' },
+  to: 'WoCe4-2npPfvqheiAAAC',
+  from: 'CBA9IHxMDIqW5P75AAAD' }
+Recieved message :localCandidate from CBA9IHxMDIqW5P75AAAD
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:2 2 TCP 2105524478 192.168.56.1 9 typ host tcptype active',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: 'cb6015a4' },
+  to: 'WoCe4-2npPfvqheiAAAC',
+  from: 'CBA9IHxMDIqW5P75AAAD' }
+Recieved message :localCandidate from CBA9IHxMDIqW5P75AAAD
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:3 2 TCP 2105458942 192.168.1.130 9 typ host tcptype active',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: 'cb6015a4' },
+  to: 'WoCe4-2npPfvqheiAAAC',
+  from: 'CBA9IHxMDIqW5P75AAAD' }
+Recieved message :localCandidate from CBA9IHxMDIqW5P75AAAD
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: '',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: 'cb6015a4' },
+  to: 'WoCe4-2npPfvqheiAAAC',
+  from: 'CBA9IHxMDIqW5P75AAAD' }
+Recieved message :localCandidate from CBA9IHxMDIqW5P75AAAD
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:0 1 UDP 2122252543 192.168.56.1 49240 typ host',
+     sdpMid: '1',
+     sdpMLineIndex: 1,
+     usernameFragment: 'cb6015a4' },
+  to: 'WoCe4-2npPfvqheiAAAC',
+  from: 'CBA9IHxMDIqW5P75AAAD' }
+Recieved message :localCandidate from CBA9IHxMDIqW5P75AAAD
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:1 1 UDP 2122187007 192.168.1.130 49241 typ host',
+     sdpMid: '1',
+     sdpMLineIndex: 1,
+     usernameFragment: 'cb6015a4' },
+  to: 'WoCe4-2npPfvqheiAAAC',
+  from: 'CBA9IHxMDIqW5P75AAAD' }
+Recieved message :localCandidate from CBA9IHxMDIqW5P75AAAD
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:2 1 TCP 2105524479 192.168.56.1 9 typ host tcptype active',
+     sdpMid: '1',
+     sdpMLineIndex: 1,
+     usernameFragment: 'cb6015a4' },
+  to: 'WoCe4-2npPfvqheiAAAC',
+  from: 'CBA9IHxMDIqW5P75AAAD' }
+Recieved message :localCandidate from CBA9IHxMDIqW5P75AAAD
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:3 1 TCP 2105458943 192.168.1.130 9 typ host tcptype active',
+     sdpMid: '1',
+     sdpMLineIndex: 1,
+     usernameFragment: 'cb6015a4' },
+  to: 'WoCe4-2npPfvqheiAAAC',
+  from: 'CBA9IHxMDIqW5P75AAAD' }
+Recieved message :localCandidate from CBA9IHxMDIqW5P75AAAD
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:0 2 UDP 2122252542 192.168.56.1 49242 typ host',
+     sdpMid: '1',
+     sdpMLineIndex: 1,
+     usernameFragment: 'cb6015a4' },
+  to: 'WoCe4-2npPfvqheiAAAC',
+  from: 'CBA9IHxMDIqW5P75AAAD' }
+Recieved message :localCandidate from CBA9IHxMDIqW5P75AAAD
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:1 2 UDP 2122187006 192.168.1.130 49243 typ host',
+     sdpMid: '1',
+     sdpMLineIndex: 1,
+     usernameFragment: 'cb6015a4' },
+  to: 'WoCe4-2npPfvqheiAAAC',
+  from: 'CBA9IHxMDIqW5P75AAAD' }
+Recieved message :localCandidate from CBA9IHxMDIqW5P75AAAD
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:2 2 TCP 2105524478 192.168.56.1 9 typ host tcptype active',
+     sdpMid: '1',
+     sdpMLineIndex: 1,
+     usernameFragment: 'cb6015a4' },
+  to: 'WoCe4-2npPfvqheiAAAC',
+  from: 'CBA9IHxMDIqW5P75AAAD' }
+Recieved message :localCandidate from CBA9IHxMDIqW5P75AAAD
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:3 2 TCP 2105458942 192.168.1.130 9 typ host tcptype active',
+     sdpMid: '1',
+     sdpMLineIndex: 1,
+     usernameFragment: 'cb6015a4' },
+  to: 'WoCe4-2npPfvqheiAAAC',
+  from: 'CBA9IHxMDIqW5P75AAAD' }
+Recieved message :localCandidate from CBA9IHxMDIqW5P75AAAD
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: '',
+     sdpMid: '1',
+     sdpMLineIndex: 1,
+     usernameFragment: 'cb6015a4' },
+  to: 'WoCe4-2npPfvqheiAAAC',
+  from: 'CBA9IHxMDIqW5P75AAAD' }
+Recieved message :offer from WoCe4-2npPfvqheiAAAC
+DATA: [object Object]
+{ type: 'offer',
+  data: 
+   { type: 'offer',
+     sdp: 'v=0\r\no=mozilla...THIS_IS_SDPARTA-70.0.1 1430412005930524242 0 IN IP4 0.0.0.0\r\ns=-\r\nt=0 0\r\na=fingerprint:sha-256 AD:4A:0F:83:A5:5F:57:B3:E9:72:E7:F1:0A:4B:11:7A:EB:E2:88:C1:78:89:9A:79:94:F9:AD:40:78:8C:15:B2\r\na=group:BUNDLE 0 1 2\r\na=ice-options:trickle\r\na=msid-semantic:WMS *\r\nm=audio 9 UDP/TLS/RTP/SAVPF 109 9 0 8 101\r\nc=IN IP4 0.0.0.0\r\na=sendrecv\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2/recvonly urn:ietf:params:rtp-hdrext:csrc-audio-level\r\na=extmap:3 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=fmtp:109 maxplaybackrate=48000;stereo=1;useinbandfec=1\r\na=fmtp:101 0-15\r\na=ice-pwd:6b249d0562031c2b66230ca0b73425a0\r\na=ice-ufrag:d3a29f4c\r\na=mid:0\r\na=msid:{64c56ae5-1387-4f56-86f2-36801380510d} {115e08ac-afc1-40c9-a014-4143681f440c}\r\na=rtcp-mux\r\na=rtpmap:109 opus/48000/2\r\na=rtpmap:9 G722/8000/1\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:101 telephone-event/8000/1\r\na=setup:actpass\r\na=ssrc:1137952267 cname:{cc3353c9-0a9d-4f43-b22a-990e68af64fc}\r\nm=video 9 UDP/TLS/RTP/SAVPF 120 121 126 97\r\nc=IN IP4 0.0.0.0\r\na=sendrecv\r\na=extmap:3 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:4 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:5 urn:ietf:params:rtp-hdrext:toffset\r\na=fmtp:126 profile-level-id=42e01f;level-asymmetry-allowed=1;packetization-mode=1\r\na=fmtp:97 profile-level-id=42e01f;level-asymmetry-allowed=1\r\na=fmtp:120 max-fs=12288;max-fr=60\r\na=fmtp:121 max-fs=12288;max-fr=60\r\na=ice-pwd:6b249d0562031c2b66230ca0b73425a0\r\na=ice-ufrag:d3a29f4c\r\na=mid:1\r\na=msid:{64c56ae5-1387-4f56-86f2-36801380510d} {50b4d16a-2ff6-4d09-9fb8-4ec472348350}\r\na=rtcp-fb:120 nack\r\na=rtcp-fb:120 nack pli\r\na=rtcp-fb:120 ccm fir\r\na=rtcp-fb:120 goog-remb\r\na=rtcp-fb:121 nack\r\na=rtcp-fb:121 nack pli\r\na=rtcp-fb:121 ccm fir\r\na=rtcp-fb:121 goog-remb\r\na=rtcp-fb:126 nack\r\na=rtcp-fb:126 nack pli\r\na=rtcp-fb:126 ccm fir\r\na=rtcp-fb:126 goog-remb\r\na=rtcp-fb:97 nack\r\na=rtcp-fb:97 nack pli\r\na=rtcp-fb:97 ccm fir\r\na=rtcp-fb:97 goog-remb\r\na=rtcp-mux\r\na=rtpmap:120 VP8/90000\r\na=rtpmap:121 VP9/90000\r\na=rtpmap:126 H264/90000\r\na=rtpmap:97 H264/90000\r\na=setup:actpass\r\na=ssrc:2469072710 cname:{cc3353c9-0a9d-4f43-b22a-990e68af64fc}\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=sendrecv\r\na=ice-pwd:6b249d0562031c2b66230ca0b73425a0\r\na=ice-ufrag:d3a29f4c\r\na=mid:2\r\na=setup:actpass\r\na=sctp-port:5000\r\na=max-message-size:1073741823\r\n' },
+  to: 'CBA9IHxMDIqW5P75AAAD',
+  from: 'WoCe4-2npPfvqheiAAAC' }
+Recieved message :answer from CBA9IHxMDIqW5P75AAAD
+DATA: [object Object]
+{ type: 'answer',
+  data: 
+   { type: 'answer',
+     sdp: 'v=0\r\no=mozilla...THIS_IS_SDPARTA-71.0 6425414817468683237 0 IN IP4 0.0.0.0\r\ns=-\r\nt=0 0\r\na=fingerprint:sha-256 B0:1E:4C:04:F8:64:D9:A6:FE:0F:5B:A5:45:8B:FB:EF:BB:1D:6B:12:C6:8C:1B:57:BB:11:01:01:6E:1A:62:B1\r\na=group:BUNDLE 0 1 2\r\na=ice-options:trickle\r\na=msid-semantic:WMS *\r\nm=audio 9 UDP/TLS/RTP/SAVPF 109 9 0 8 101\r\nc=IN IP4 0.0.0.0\r\na=recvonly\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:3 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=fmtp:109 maxplaybackrate=48000;stereo=1;useinbandfec=1\r\na=fmtp:101 0-15\r\na=ice-pwd:ec59144afd96be327a07d7861d9027fa\r\na=ice-ufrag:d3d80d51\r\na=mid:0\r\na=rtcp-mux\r\na=rtpmap:109 opus/48000/2\r\na=rtpmap:9 G722/8000/1\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:101 telephone-event/8000/1\r\na=setup:active\r\na=ssrc:545477986 cname:{0a12d7bd-bcd1-4211-b185-65f3f0e72871}\r\nm=video 9 UDP/TLS/RTP/SAVPF 120 121 126 97\r\nc=IN IP4 0.0.0.0\r\na=recvonly\r\na=extmap:3 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:4 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:5 urn:ietf:params:rtp-hdrext:toffset\r\na=fmtp:126 profile-level-id=42e01f;level-asymmetry-allowed=1;packetization-mode=1\r\na=fmtp:97 profile-level-id=42e01f;level-asymmetry-allowed=1\r\na=fmtp:120 max-fs=12288;max-fr=60\r\na=fmtp:121 max-fs=12288;max-fr=60\r\na=ice-pwd:ec59144afd96be327a07d7861d9027fa\r\na=ice-ufrag:d3d80d51\r\na=mid:1\r\na=rtcp-fb:120 nack\r\na=rtcp-fb:120 nack pli\r\na=rtcp-fb:120 ccm fir\r\na=rtcp-fb:120 goog-remb\r\na=rtcp-fb:121 nack\r\na=rtcp-fb:121 nack pli\r\na=rtcp-fb:121 ccm fir\r\na=rtcp-fb:121 goog-remb\r\na=rtcp-fb:126 nack\r\na=rtcp-fb:126 nack pli\r\na=rtcp-fb:126 ccm fir\r\na=rtcp-fb:126 goog-remb\r\na=rtcp-fb:97 nack\r\na=rtcp-fb:97 nack pli\r\na=rtcp-fb:97 ccm fir\r\na=rtcp-fb:97 goog-remb\r\na=rtcp-mux\r\na=rtpmap:120 VP8/90000\r\na=rtpmap:121 VP9/90000\r\na=rtpmap:126 H264/90000\r\na=rtpmap:97 H264/90000\r\na=setup:active\r\na=ssrc:3020363087 cname:{0a12d7bd-bcd1-4211-b185-65f3f0e72871}\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=sendrecv\r\na=ice-pwd:ec59144afd96be327a07d7861d9027fa\r\na=ice-ufrag:d3d80d51\r\na=mid:2\r\na=setup:active\r\na=sctp-port:5000\r\na=max-message-size:1073741823\r\n' },
+  to: 'WoCe4-2npPfvqheiAAAC',
+  from: 'CBA9IHxMDIqW5P75AAAD' }
+Recieved message :remoteCandidate from CBA9IHxMDIqW5P75AAAD
+DATA: [object Object]
+{ type: 'remoteCandidate',
+  data: 
+   { candidate: 'candidate:0 1 UDP 2122252543 192.168.56.1 49244 typ host',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: 'd3d80d51' },
+  to: 'WoCe4-2npPfvqheiAAAC',
+  from: 'CBA9IHxMDIqW5P75AAAD' }
+Recieved message :answer from WoCe4-2npPfvqheiAAAC
+DATA: [object Object]
+{ type: 'answer',
+  data: 
+   { type: 'answer',
+     sdp: 'v=0\r\no=mozilla...THIS_IS_SDPARTA-70.0.1 8530838608191254389 0 IN IP4 0.0.0.0\r\ns=-\r\nt=0 0\r\na=fingerprint:sha-256 6B:D5:02:80:EE:FD:76:2D:6E:AF:43:DA:4C:34:6D:DF:91:B4:2A:D0:B1:52:ED:FC:5C:D3:DF:E9:ED:8E:D4:77\r\na=group:BUNDLE 0 1 2\r\na=ice-options:trickle\r\na=msid-semantic:WMS *\r\nm=audio 9 UDP/TLS/RTP/SAVPF 109 9 0 8 101\r\nc=IN IP4 0.0.0.0\r\na=recvonly\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:3 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=fmtp:109 maxplaybackrate=48000;stereo=1;useinbandfec=1\r\na=fmtp:101 0-15\r\na=ice-pwd:c733aa78689951c985b03ed506803edb\r\na=ice-ufrag:e5183009\r\na=mid:0\r\na=rtcp-mux\r\na=rtpmap:109 opus/48000/2\r\na=rtpmap:9 G722/8000/1\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:101 telephone-event/8000/1\r\na=setup:active\r\na=ssrc:2304942572 cname:{436e2c47-9c89-42e4-8b95-841d78d8dc7c}\r\nm=video 9 UDP/TLS/RTP/SAVPF 120 121 126 97\r\nc=IN IP4 0.0.0.0\r\na=recvonly\r\na=extmap:3 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:4 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:5 urn:ietf:params:rtp-hdrext:toffset\r\na=fmtp:126 profile-level-id=42e01f;level-asymmetry-allowed=1;packetization-mode=1\r\na=fmtp:97 profile-level-id=42e01f;level-asymmetry-allowed=1\r\na=fmtp:120 max-fs=12288;max-fr=60\r\na=fmtp:121 max-fs=12288;max-fr=60\r\na=ice-pwd:c733aa78689951c985b03ed506803edb\r\na=ice-ufrag:e5183009\r\na=mid:1\r\na=rtcp-fb:120 nack\r\na=rtcp-fb:120 nack pli\r\na=rtcp-fb:120 ccm fir\r\na=rtcp-fb:120 goog-remb\r\na=rtcp-fb:121 nack\r\na=rtcp-fb:121 nack pli\r\na=rtcp-fb:121 ccm fir\r\na=rtcp-fb:121 goog-remb\r\na=rtcp-fb:126 nack\r\na=rtcp-fb:126 nack pli\r\na=rtcp-fb:126 ccm fir\r\na=rtcp-fb:126 goog-remb\r\na=rtcp-fb:97 nack\r\na=rtcp-fb:97 nack pli\r\na=rtcp-fb:97 ccm fir\r\na=rtcp-fb:97 goog-remb\r\na=rtcp-mux\r\na=rtpmap:120 VP8/90000\r\na=rtpmap:121 VP9/90000\r\na=rtpmap:126 H264/90000\r\na=rtpmap:97 H264/90000\r\na=setup:active\r\na=ssrc:813069223 cname:{436e2c47-9c89-42e4-8b95-841d78d8dc7c}\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=sendrecv\r\na=ice-pwd:c733aa78689951c985b03ed506803edb\r\na=ice-ufrag:e5183009\r\na=mid:2\r\na=setup:active\r\na=sctp-port:5000\r\na=max-message-size:1073741823\r\n' },
+  to: 'CBA9IHxMDIqW5P75AAAD',
+  from: 'WoCe4-2npPfvqheiAAAC' }
+Recieved message :remoteCandidate from CBA9IHxMDIqW5P75AAAD
+DATA: [object Object]
+{ type: 'remoteCandidate',
+  data: 
+   { candidate: 'candidate:1 1 UDP 2122187007 192.168.1.130 49245 typ host',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: 'd3d80d51' },
+  to: 'WoCe4-2npPfvqheiAAAC',
+  from: 'CBA9IHxMDIqW5P75AAAD' }
+Recieved message :remoteCandidate from CBA9IHxMDIqW5P75AAAD
+DATA: [object Object]
+{ type: 'remoteCandidate',
+  data: 
+   { candidate: 'candidate:2 1 TCP 2105524479 192.168.56.1 9 typ host tcptype active',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: 'd3d80d51' },
+  to: 'WoCe4-2npPfvqheiAAAC',
+  from: 'CBA9IHxMDIqW5P75AAAD' }
+Recieved message :remoteCandidate from CBA9IHxMDIqW5P75AAAD
+DATA: [object Object]
+{ type: 'remoteCandidate',
+  data: 
+   { candidate: 'candidate:3 1 TCP 2105458943 192.168.1.130 9 typ host tcptype active',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: 'd3d80d51' },
+  to: 'WoCe4-2npPfvqheiAAAC',
+  from: 'CBA9IHxMDIqW5P75AAAD' }
+Recieved message :remoteCandidate from CBA9IHxMDIqW5P75AAAD
+DATA: [object Object]
+{ type: 'remoteCandidate',
+  data: 
+   { candidate: '',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: 'd3d80d51' },
+  to: 'WoCe4-2npPfvqheiAAAC',
+  from: 'CBA9IHxMDIqW5P75AAAD' }
+Recieved message :localCandidate from WoCe4-2npPfvqheiAAAC
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:0 1 UDP 2122252543 192.168.56.1 49238 typ host',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: 'd3a29f4c' },
+  to: 'CBA9IHxMDIqW5P75AAAD',
+  from: 'WoCe4-2npPfvqheiAAAC' }
+Recieved message :localCandidate from WoCe4-2npPfvqheiAAAC
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:1 1 UDP 2122187007 192.168.1.10 49239 typ host',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: 'd3a29f4c' },
+  to: 'CBA9IHxMDIqW5P75AAAD',
+  from: 'WoCe4-2npPfvqheiAAAC' }
+Recieved message :localCandidate from WoCe4-2npPfvqheiAAAC
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:2 1 TCP 2105524479 192.168.56.1 9 typ host tcptype active',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: 'd3a29f4c' },
+  to: 'CBA9IHxMDIqW5P75AAAD',
+  from: 'WoCe4-2npPfvqheiAAAC' }
+Recieved message :localCandidate from WoCe4-2npPfvqheiAAAC
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:3 1 TCP 2105458943 192.168.1.10 9 typ host tcptype active',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: 'd3a29f4c' },
+  to: 'CBA9IHxMDIqW5P75AAAD',
+  from: 'WoCe4-2npPfvqheiAAAC' }
+Recieved message :localCandidate from WoCe4-2npPfvqheiAAAC
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:0 2 UDP 2122252542 192.168.56.1 49240 typ host',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: 'd3a29f4c' },
+  to: 'CBA9IHxMDIqW5P75AAAD',
+  from: 'WoCe4-2npPfvqheiAAAC' }
+Recieved message :localCandidate from WoCe4-2npPfvqheiAAAC
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:1 2 UDP 2122187006 192.168.1.10 49241 typ host',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: 'd3a29f4c' },
+  to: 'CBA9IHxMDIqW5P75AAAD',
+  from: 'WoCe4-2npPfvqheiAAAC' }
+Recieved message :localCandidate from WoCe4-2npPfvqheiAAAC
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:2 2 TCP 2105524478 192.168.56.1 9 typ host tcptype active',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: 'd3a29f4c' },
+  to: 'CBA9IHxMDIqW5P75AAAD',
+  from: 'WoCe4-2npPfvqheiAAAC' }
+Recieved message :localCandidate from WoCe4-2npPfvqheiAAAC
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:3 2 TCP 2105458942 192.168.1.10 9 typ host tcptype active',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: 'd3a29f4c' },
+  to: 'CBA9IHxMDIqW5P75AAAD',
+  from: 'WoCe4-2npPfvqheiAAAC' }
+Recieved message :localCandidate from WoCe4-2npPfvqheiAAAC
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: '',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: 'd3a29f4c' },
+  to: 'CBA9IHxMDIqW5P75AAAD',
+  from: 'WoCe4-2npPfvqheiAAAC' }
+Recieved message :remoteCandidate from WoCe4-2npPfvqheiAAAC
+DATA: [object Object]
+{ type: 'remoteCandidate',
+  data: 
+   { candidate: 'candidate:0 1 UDP 2122252543 192.168.56.1 49246 typ host',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: 'e5183009' },
+  to: 'CBA9IHxMDIqW5P75AAAD',
+  from: 'WoCe4-2npPfvqheiAAAC' }
+Recieved message :remoteCandidate from WoCe4-2npPfvqheiAAAC
+DATA: [object Object]
+{ type: 'remoteCandidate',
+  data: 
+   { candidate: 'candidate:1 1 UDP 2122187007 192.168.1.10 49247 typ host',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: 'e5183009' },
+  to: 'CBA9IHxMDIqW5P75AAAD',
+  from: 'WoCe4-2npPfvqheiAAAC' }
+Recieved message :remoteCandidate from WoCe4-2npPfvqheiAAAC
+DATA: [object Object]
+{ type: 'remoteCandidate',
+  data: 
+   { candidate: 'candidate:2 1 TCP 2105524479 192.168.56.1 9 typ host tcptype active',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: 'e5183009' },
+  to: 'CBA9IHxMDIqW5P75AAAD',
+  from: 'WoCe4-2npPfvqheiAAAC' }
+Recieved message :remoteCandidate from WoCe4-2npPfvqheiAAAC
+DATA: [object Object]
+{ type: 'remoteCandidate',
+  data: 
+   { candidate: 'candidate:3 1 TCP 2105458943 192.168.1.10 9 typ host tcptype active',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: 'e5183009' },
+  to: 'CBA9IHxMDIqW5P75AAAD',
+  from: 'WoCe4-2npPfvqheiAAAC' }
+Recieved message :remoteCandidate from WoCe4-2npPfvqheiAAAC
+DATA: [object Object]
+{ type: 'remoteCandidate',
+  data: 
+   { candidate: '',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: 'e5183009' },
+  to: 'CBA9IHxMDIqW5P75AAAD',
+  from: 'WoCe4-2npPfvqheiAAAC' }
+USUARI ID -> WoCe4-2npPfvqheiAAAC || DISCONNECT
+USUARI ID -> CBA9IHxMDIqW5P75AAAD || DISCONNECT
+ALL USERS DELETED FROM USER LIST
+USUARI ID -> t3VwjNfQpeQmusyjAAAE || CONNECT
+USUARI ID -> PaK5xPhPSorwvxW2AAAF || CONNECT
+Recieved message :offer from PaK5xPhPSorwvxW2AAAF
+DATA: [object Object]
+{ type: 'offer',
+  data: 
+   { type: 'offer',
+     sdp: 'v=0\r\no=mozilla...THIS_IS_SDPARTA-70.0.1 8226380074379338020 0 IN IP4 0.0.0.0\r\ns=-\r\nt=0 0\r\na=fingerprint:sha-256 A4:13:8C:25:FC:DB:F6:30:0B:17:1C:18:59:D4:EA:79:7A:11:76:90:B7:E7:EC:02:8E:69:EC:B4:88:75:AC:1D\r\na=group:BUNDLE 0 1 2\r\na=ice-options:trickle\r\na=msid-semantic:WMS *\r\nm=audio 9 UDP/TLS/RTP/SAVPF 109 9 0 8 101\r\nc=IN IP4 0.0.0.0\r\na=sendrecv\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2/recvonly urn:ietf:params:rtp-hdrext:csrc-audio-level\r\na=extmap:3 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=fmtp:109 maxplaybackrate=48000;stereo=1;useinbandfec=1\r\na=fmtp:101 0-15\r\na=ice-pwd:c72bceb93a7d91a56afd5367048e4aa7\r\na=ice-ufrag:15f220f2\r\na=mid:0\r\na=msid:{1043e9bf-7f2c-467e-950f-46405dacb1b8} {03576573-c56f-49b5-a071-d3118c260746}\r\na=rtcp-mux\r\na=rtpmap:109 opus/48000/2\r\na=rtpmap:9 G722/8000/1\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:101 telephone-event/8000/1\r\na=setup:actpass\r\na=ssrc:4204400569 cname:{ef123fb2-f1a7-4713-a7ee-f81b0479df3d}\r\nm=video 9 UDP/TLS/RTP/SAVPF 120 121 126 97\r\nc=IN IP4 0.0.0.0\r\na=sendrecv\r\na=extmap:3 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:4 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:5 urn:ietf:params:rtp-hdrext:toffset\r\na=fmtp:126 profile-level-id=42e01f;level-asymmetry-allowed=1;packetization-mode=1\r\na=fmtp:97 profile-level-id=42e01f;level-asymmetry-allowed=1\r\na=fmtp:120 max-fs=12288;max-fr=60\r\na=fmtp:121 max-fs=12288;max-fr=60\r\na=ice-pwd:c72bceb93a7d91a56afd5367048e4aa7\r\na=ice-ufrag:15f220f2\r\na=mid:1\r\na=msid:{1043e9bf-7f2c-467e-950f-46405dacb1b8} {7c1b1f9f-1bf6-4a87-8ea9-ba22cd496ac5}\r\na=rtcp-fb:120 nack\r\na=rtcp-fb:120 nack pli\r\na=rtcp-fb:120 ccm fir\r\na=rtcp-fb:120 goog-remb\r\na=rtcp-fb:121 nack\r\na=rtcp-fb:121 nack pli\r\na=rtcp-fb:121 ccm fir\r\na=rtcp-fb:121 goog-remb\r\na=rtcp-fb:126 nack\r\na=rtcp-fb:126 nack pli\r\na=rtcp-fb:126 ccm fir\r\na=rtcp-fb:126 goog-remb\r\na=rtcp-fb:97 nack\r\na=rtcp-fb:97 nack pli\r\na=rtcp-fb:97 ccm fir\r\na=rtcp-fb:97 goog-remb\r\na=rtcp-mux\r\na=rtpmap:120 VP8/90000\r\na=rtpmap:121 VP9/90000\r\na=rtpmap:126 H264/90000\r\na=rtpmap:97 H264/90000\r\na=setup:actpass\r\na=ssrc:258518953 cname:{ef123fb2-f1a7-4713-a7ee-f81b0479df3d}\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=sendrecv\r\na=ice-pwd:c72bceb93a7d91a56afd5367048e4aa7\r\na=ice-ufrag:15f220f2\r\na=mid:2\r\na=setup:actpass\r\na=sctp-port:5000\r\na=max-message-size:1073741823\r\n' },
+  to: 't3VwjNfQpeQmusyjAAAE',
+  from: 'PaK5xPhPSorwvxW2AAAF' }
+Recieved message :localCandidate from PaK5xPhPSorwvxW2AAAF
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:0 1 UDP 2122252543 192.168.56.1 57316 typ host',
+     sdpMid: '2',
+     sdpMLineIndex: 2,
+     usernameFragment: '15f220f2' },
+  to: 't3VwjNfQpeQmusyjAAAE',
+  from: 'PaK5xPhPSorwvxW2AAAF' }
+Recieved message :offer from t3VwjNfQpeQmusyjAAAE
+DATA: [object Object]
+{ type: 'offer',
+  data: 
+   { type: 'offer',
+     sdp: 'v=0\r\no=mozilla...THIS_IS_SDPARTA-71.0 7417210664942116134 0 IN IP4 0.0.0.0\r\ns=-\r\nt=0 0\r\na=fingerprint:sha-256 B5:E3:78:10:67:00:AC:F6:73:00:BB:66:5C:A2:C9:01:03:99:7D:7C:8E:12:05:F9:77:AB:DF:51:97:20:5F:B3\r\na=group:BUNDLE 0 1 2\r\na=ice-options:trickle\r\na=msid-semantic:WMS *\r\nm=audio 9 UDP/TLS/RTP/SAVPF 109 9 0 8 101\r\nc=IN IP4 0.0.0.0\r\na=sendrecv\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2/recvonly urn:ietf:params:rtp-hdrext:csrc-audio-level\r\na=extmap:3 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=fmtp:109 maxplaybackrate=48000;stereo=1;useinbandfec=1\r\na=fmtp:101 0-15\r\na=ice-pwd:ef350c89dc3dfaa3e23fb955275ec4e0\r\na=ice-ufrag:464e29ab\r\na=mid:0\r\na=msid:{6b206503-7497-4e1a-9040-aec8d0c76bd8} {08a2c467-c773-4457-adbf-ad1fe9c8618f}\r\na=rtcp-mux\r\na=rtpmap:109 opus/48000/2\r\na=rtpmap:9 G722/8000/1\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:101 telephone-event/8000/1\r\na=setup:actpass\r\na=ssrc:3563405568 cname:{5b2fbeae-0e70-4691-9e39-c9773e021e2f}\r\nm=video 9 UDP/TLS/RTP/SAVPF 120 121 126 97\r\nc=IN IP4 0.0.0.0\r\na=sendrecv\r\na=extmap:3 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:4 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:5 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:6/recvonly http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=fmtp:126 profile-level-id=42e01f;level-asymmetry-allowed=1;packetization-mode=1\r\na=fmtp:97 profile-level-id=42e01f;level-asymmetry-allowed=1\r\na=fmtp:120 max-fs=12288;max-fr=60\r\na=fmtp:121 max-fs=12288;max-fr=60\r\na=ice-pwd:ef350c89dc3dfaa3e23fb955275ec4e0\r\na=ice-ufrag:464e29ab\r\na=mid:1\r\na=msid:{6b206503-7497-4e1a-9040-aec8d0c76bd8} {1bc990e1-5e6a-4202-afd2-94c3e98fb92e}\r\na=rtcp-fb:120 nack\r\na=rtcp-fb:120 nack pli\r\na=rtcp-fb:120 ccm fir\r\na=rtcp-fb:120 goog-remb\r\na=rtcp-fb:121 nack\r\na=rtcp-fb:121 nack pli\r\na=rtcp-fb:121 ccm fir\r\na=rtcp-fb:121 goog-remb\r\na=rtcp-fb:126 nack\r\na=rtcp-fb:126 nack pli\r\na=rtcp-fb:126 ccm fir\r\na=rtcp-fb:126 goog-remb\r\na=rtcp-fb:97 nack\r\na=rtcp-fb:97 nack pli\r\na=rtcp-fb:97 ccm fir\r\na=rtcp-fb:97 goog-remb\r\na=rtcp-mux\r\na=rtpmap:120 VP8/90000\r\na=rtpmap:121 VP9/90000\r\na=rtpmap:126 H264/90000\r\na=rtpmap:97 H264/90000\r\na=setup:actpass\r\na=ssrc:2906426494 cname:{5b2fbeae-0e70-4691-9e39-c9773e021e2f}\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=sendrecv\r\na=ice-pwd:ef350c89dc3dfaa3e23fb955275ec4e0\r\na=ice-ufrag:464e29ab\r\na=mid:2\r\na=setup:actpass\r\na=sctp-port:5000\r\na=max-message-size:1073741823\r\n' },
+  to: 'PaK5xPhPSorwvxW2AAAF',
+  from: 't3VwjNfQpeQmusyjAAAE' }
+Recieved message :localCandidate from PaK5xPhPSorwvxW2AAAF
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:1 1 UDP 2122187007 192.168.1.10 57317 typ host',
+     sdpMid: '2',
+     sdpMLineIndex: 2,
+     usernameFragment: '15f220f2' },
+  to: 't3VwjNfQpeQmusyjAAAE',
+  from: 'PaK5xPhPSorwvxW2AAAF' }
+Recieved message :localCandidate from PaK5xPhPSorwvxW2AAAF
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:2 1 TCP 2105524479 192.168.56.1 9 typ host tcptype active',
+     sdpMid: '2',
+     sdpMLineIndex: 2,
+     usernameFragment: '15f220f2' },
+  to: 't3VwjNfQpeQmusyjAAAE',
+  from: 'PaK5xPhPSorwvxW2AAAF' }
+Recieved message :localCandidate from PaK5xPhPSorwvxW2AAAF
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:3 1 TCP 2105458943 192.168.1.10 9 typ host tcptype active',
+     sdpMid: '2',
+     sdpMLineIndex: 2,
+     usernameFragment: '15f220f2' },
+  to: 't3VwjNfQpeQmusyjAAAE',
+  from: 'PaK5xPhPSorwvxW2AAAF' }
+Recieved message :localCandidate from PaK5xPhPSorwvxW2AAAF
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: '',
+     sdpMid: '2',
+     sdpMLineIndex: 2,
+     usernameFragment: '15f220f2' },
+  to: 't3VwjNfQpeQmusyjAAAE',
+  from: 'PaK5xPhPSorwvxW2AAAF' }
+Recieved message :localCandidate from PaK5xPhPSorwvxW2AAAF
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:0 1 UDP 2122252543 192.168.56.1 57318 typ host',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: '15f220f2' },
+  to: 't3VwjNfQpeQmusyjAAAE',
+  from: 'PaK5xPhPSorwvxW2AAAF' }
+Recieved message :localCandidate from PaK5xPhPSorwvxW2AAAF
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:1 1 UDP 2122187007 192.168.1.10 57319 typ host',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: '15f220f2' },
+  to: 't3VwjNfQpeQmusyjAAAE',
+  from: 'PaK5xPhPSorwvxW2AAAF' }
+Recieved message :localCandidate from PaK5xPhPSorwvxW2AAAF
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:2 1 TCP 2105524479 192.168.56.1 9 typ host tcptype active',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: '15f220f2' },
+  to: 't3VwjNfQpeQmusyjAAAE',
+  from: 'PaK5xPhPSorwvxW2AAAF' }
+Recieved message :localCandidate from PaK5xPhPSorwvxW2AAAF
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:3 1 TCP 2105458943 192.168.1.10 9 typ host tcptype active',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: '15f220f2' },
+  to: 't3VwjNfQpeQmusyjAAAE',
+  from: 'PaK5xPhPSorwvxW2AAAF' }
+Recieved message :localCandidate from PaK5xPhPSorwvxW2AAAF
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:0 2 UDP 2122252542 192.168.56.1 57320 typ host',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: '15f220f2' },
+  to: 't3VwjNfQpeQmusyjAAAE',
+  from: 'PaK5xPhPSorwvxW2AAAF' }
+Recieved message :localCandidate from PaK5xPhPSorwvxW2AAAF
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:1 2 UDP 2122187006 192.168.1.10 57321 typ host',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: '15f220f2' },
+  to: 't3VwjNfQpeQmusyjAAAE',
+  from: 'PaK5xPhPSorwvxW2AAAF' }
+Recieved message :localCandidate from PaK5xPhPSorwvxW2AAAF
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:2 2 TCP 2105524478 192.168.56.1 9 typ host tcptype active',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: '15f220f2' },
+  to: 't3VwjNfQpeQmusyjAAAE',
+  from: 'PaK5xPhPSorwvxW2AAAF' }
+Recieved message :localCandidate from PaK5xPhPSorwvxW2AAAF
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:3 2 TCP 2105458942 192.168.1.10 9 typ host tcptype active',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: '15f220f2' },
+  to: 't3VwjNfQpeQmusyjAAAE',
+  from: 'PaK5xPhPSorwvxW2AAAF' }
+Recieved message :localCandidate from PaK5xPhPSorwvxW2AAAF
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: '',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: '15f220f2' },
+  to: 't3VwjNfQpeQmusyjAAAE',
+  from: 'PaK5xPhPSorwvxW2AAAF' }
+Recieved message :localCandidate from PaK5xPhPSorwvxW2AAAF
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:0 1 UDP 2122252543 192.168.56.1 57322 typ host',
+     sdpMid: '1',
+     sdpMLineIndex: 1,
+     usernameFragment: '15f220f2' },
+  to: 't3VwjNfQpeQmusyjAAAE',
+  from: 'PaK5xPhPSorwvxW2AAAF' }
+Recieved message :localCandidate from PaK5xPhPSorwvxW2AAAF
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:1 1 UDP 2122187007 192.168.1.10 57323 typ host',
+     sdpMid: '1',
+     sdpMLineIndex: 1,
+     usernameFragment: '15f220f2' },
+  to: 't3VwjNfQpeQmusyjAAAE',
+  from: 'PaK5xPhPSorwvxW2AAAF' }
+Recieved message :localCandidate from PaK5xPhPSorwvxW2AAAF
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:2 1 TCP 2105524479 192.168.56.1 9 typ host tcptype active',
+     sdpMid: '1',
+     sdpMLineIndex: 1,
+     usernameFragment: '15f220f2' },
+  to: 't3VwjNfQpeQmusyjAAAE',
+  from: 'PaK5xPhPSorwvxW2AAAF' }
+Recieved message :localCandidate from PaK5xPhPSorwvxW2AAAF
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:3 1 TCP 2105458943 192.168.1.10 9 typ host tcptype active',
+     sdpMid: '1',
+     sdpMLineIndex: 1,
+     usernameFragment: '15f220f2' },
+  to: 't3VwjNfQpeQmusyjAAAE',
+  from: 'PaK5xPhPSorwvxW2AAAF' }
+Recieved message :localCandidate from PaK5xPhPSorwvxW2AAAF
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:0 2 UDP 2122252542 192.168.56.1 57324 typ host',
+     sdpMid: '1',
+     sdpMLineIndex: 1,
+     usernameFragment: '15f220f2' },
+  to: 't3VwjNfQpeQmusyjAAAE',
+  from: 'PaK5xPhPSorwvxW2AAAF' }
+Recieved message :localCandidate from PaK5xPhPSorwvxW2AAAF
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:1 2 UDP 2122187006 192.168.1.10 57325 typ host',
+     sdpMid: '1',
+     sdpMLineIndex: 1,
+     usernameFragment: '15f220f2' },
+  to: 't3VwjNfQpeQmusyjAAAE',
+  from: 'PaK5xPhPSorwvxW2AAAF' }
+Recieved message :localCandidate from PaK5xPhPSorwvxW2AAAF
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:2 2 TCP 2105524478 192.168.56.1 9 typ host tcptype active',
+     sdpMid: '1',
+     sdpMLineIndex: 1,
+     usernameFragment: '15f220f2' },
+  to: 't3VwjNfQpeQmusyjAAAE',
+  from: 'PaK5xPhPSorwvxW2AAAF' }
+Recieved message :localCandidate from PaK5xPhPSorwvxW2AAAF
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:3 2 TCP 2105458942 192.168.1.10 9 typ host tcptype active',
+     sdpMid: '1',
+     sdpMLineIndex: 1,
+     usernameFragment: '15f220f2' },
+  to: 't3VwjNfQpeQmusyjAAAE',
+  from: 'PaK5xPhPSorwvxW2AAAF' }
+Recieved message :localCandidate from PaK5xPhPSorwvxW2AAAF
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: '',
+     sdpMid: '1',
+     sdpMLineIndex: 1,
+     usernameFragment: '15f220f2' },
+  to: 't3VwjNfQpeQmusyjAAAE',
+  from: 'PaK5xPhPSorwvxW2AAAF' }
+Recieved message :answer from PaK5xPhPSorwvxW2AAAF
+DATA: [object Object]
+{ type: 'answer',
+  data: 
+   { type: 'answer',
+     sdp: 'v=0\r\no=mozilla...THIS_IS_SDPARTA-70.0.1 5113448858378236168 0 IN IP4 0.0.0.0\r\ns=-\r\nt=0 0\r\na=fingerprint:sha-256 D6:5E:FE:B1:73:7D:8B:53:BC:9B:91:2B:C6:81:61:7A:74:D3:DC:5D:48:28:04:FA:59:07:8A:E6:18:1C:0C:67\r\na=group:BUNDLE 0 1 2\r\na=ice-options:trickle\r\na=msid-semantic:WMS *\r\nm=audio 9 UDP/TLS/RTP/SAVPF 109 9 0 8 101\r\nc=IN IP4 0.0.0.0\r\na=recvonly\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:3 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=fmtp:109 maxplaybackrate=48000;stereo=1;useinbandfec=1\r\na=fmtp:101 0-15\r\na=ice-pwd:fd26f9685471fa7739885716fedc3f0d\r\na=ice-ufrag:9f9ff9df\r\na=mid:0\r\na=rtcp-mux\r\na=rtpmap:109 opus/48000/2\r\na=rtpmap:9 G722/8000/1\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:101 telephone-event/8000/1\r\na=setup:active\r\na=ssrc:2616069947 cname:{83390a1d-6227-406e-88ed-b3cc02fe7292}\r\nm=video 9 UDP/TLS/RTP/SAVPF 120 121 126 97\r\nc=IN IP4 0.0.0.0\r\na=recvonly\r\na=extmap:3 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:4 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:5 urn:ietf:params:rtp-hdrext:toffset\r\na=fmtp:126 profile-level-id=42e01f;level-asymmetry-allowed=1;packetization-mode=1\r\na=fmtp:97 profile-level-id=42e01f;level-asymmetry-allowed=1\r\na=fmtp:120 max-fs=12288;max-fr=60\r\na=fmtp:121 max-fs=12288;max-fr=60\r\na=ice-pwd:fd26f9685471fa7739885716fedc3f0d\r\na=ice-ufrag:9f9ff9df\r\na=mid:1\r\na=rtcp-fb:120 nack\r\na=rtcp-fb:120 nack pli\r\na=rtcp-fb:120 ccm fir\r\na=rtcp-fb:120 goog-remb\r\na=rtcp-fb:121 nack\r\na=rtcp-fb:121 nack pli\r\na=rtcp-fb:121 ccm fir\r\na=rtcp-fb:121 goog-remb\r\na=rtcp-fb:126 nack\r\na=rtcp-fb:126 nack pli\r\na=rtcp-fb:126 ccm fir\r\na=rtcp-fb:126 goog-remb\r\na=rtcp-fb:97 nack\r\na=rtcp-fb:97 nack pli\r\na=rtcp-fb:97 ccm fir\r\na=rtcp-fb:97 goog-remb\r\na=rtcp-mux\r\na=rtpmap:120 VP8/90000\r\na=rtpmap:121 VP9/90000\r\na=rtpmap:126 H264/90000\r\na=rtpmap:97 H264/90000\r\na=setup:active\r\na=ssrc:49292858 cname:{83390a1d-6227-406e-88ed-b3cc02fe7292}\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=sendrecv\r\na=ice-pwd:fd26f9685471fa7739885716fedc3f0d\r\na=ice-ufrag:9f9ff9df\r\na=mid:2\r\na=setup:active\r\na=sctp-port:5000\r\na=max-message-size:1073741823\r\n' },
+  to: 't3VwjNfQpeQmusyjAAAE',
+  from: 'PaK5xPhPSorwvxW2AAAF' }
+Recieved message :remoteCandidate from PaK5xPhPSorwvxW2AAAF
+DATA: [object Object]
+{ type: 'remoteCandidate',
+  data: 
+   { candidate: 'candidate:0 1 UDP 2122252543 192.168.56.1 57326 typ host',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: '9f9ff9df' },
+  to: 't3VwjNfQpeQmusyjAAAE',
+  from: 'PaK5xPhPSorwvxW2AAAF' }
+Recieved message :remoteCandidate from PaK5xPhPSorwvxW2AAAF
+DATA: [object Object]
+{ type: 'remoteCandidate',
+  data: 
+   { candidate: 'candidate:1 1 UDP 2122187007 192.168.1.10 57327 typ host',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: '9f9ff9df' },
+  to: 't3VwjNfQpeQmusyjAAAE',
+  from: 'PaK5xPhPSorwvxW2AAAF' }
+Recieved message :remoteCandidate from PaK5xPhPSorwvxW2AAAF
+DATA: [object Object]
+{ type: 'remoteCandidate',
+  data: 
+   { candidate: 'candidate:2 1 TCP 2105524479 192.168.56.1 9 typ host tcptype active',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: '9f9ff9df' },
+  to: 't3VwjNfQpeQmusyjAAAE',
+  from: 'PaK5xPhPSorwvxW2AAAF' }
+Recieved message :remoteCandidate from PaK5xPhPSorwvxW2AAAF
+DATA: [object Object]
+{ type: 'remoteCandidate',
+  data: 
+   { candidate: 'candidate:3 1 TCP 2105458943 192.168.1.10 9 typ host tcptype active',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: '9f9ff9df' },
+  to: 't3VwjNfQpeQmusyjAAAE',
+  from: 'PaK5xPhPSorwvxW2AAAF' }
+Recieved message :remoteCandidate from PaK5xPhPSorwvxW2AAAF
+DATA: [object Object]
+{ type: 'remoteCandidate',
+  data: 
+   { candidate: '',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: '9f9ff9df' },
+  to: 't3VwjNfQpeQmusyjAAAE',
+  from: 'PaK5xPhPSorwvxW2AAAF' }
+Recieved message :answer from t3VwjNfQpeQmusyjAAAE
+DATA: [object Object]
+{ type: 'answer',
+  data: 
+   { type: 'answer',
+     sdp: 'v=0\r\no=mozilla...THIS_IS_SDPARTA-71.0 352664408561899974 0 IN IP4 0.0.0.0\r\ns=-\r\nt=0 0\r\na=fingerprint:sha-256 57:77:BD:C8:34:E2:69:D0:6B:AA:DF:92:90:4E:35:42:CA:71:37:EA:79:A7:B9:79:BE:E6:BF:61:6B:A7:F5:B5\r\na=group:BUNDLE 0 1 2\r\na=ice-options:trickle\r\na=msid-semantic:WMS *\r\nm=audio 9 UDP/TLS/RTP/SAVPF 109 9 0 8 101\r\nc=IN IP4 0.0.0.0\r\na=recvonly\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:3 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=fmtp:109 maxplaybackrate=48000;stereo=1;useinbandfec=1\r\na=fmtp:101 0-15\r\na=ice-pwd:4412b1a041e8ed570d852a709b2c2e71\r\na=ice-ufrag:44b54a76\r\na=mid:0\r\na=rtcp-mux\r\na=rtpmap:109 opus/48000/2\r\na=rtpmap:9 G722/8000/1\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:101 telephone-event/8000/1\r\na=setup:active\r\na=ssrc:1515882667 cname:{1515ec47-1be3-4792-a1fe-6721113c5f1a}\r\nm=video 9 UDP/TLS/RTP/SAVPF 120 121 126 97\r\nc=IN IP4 0.0.0.0\r\na=recvonly\r\na=extmap:3 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:4 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:5 urn:ietf:params:rtp-hdrext:toffset\r\na=fmtp:126 profile-level-id=42e01f;level-asymmetry-allowed=1;packetization-mode=1\r\na=fmtp:97 profile-level-id=42e01f;level-asymmetry-allowed=1\r\na=fmtp:120 max-fs=12288;max-fr=60\r\na=fmtp:121 max-fs=12288;max-fr=60\r\na=ice-pwd:4412b1a041e8ed570d852a709b2c2e71\r\na=ice-ufrag:44b54a76\r\na=mid:1\r\na=rtcp-fb:120 nack\r\na=rtcp-fb:120 nack pli\r\na=rtcp-fb:120 ccm fir\r\na=rtcp-fb:120 goog-remb\r\na=rtcp-fb:121 nack\r\na=rtcp-fb:121 nack pli\r\na=rtcp-fb:121 ccm fir\r\na=rtcp-fb:121 goog-remb\r\na=rtcp-fb:126 nack\r\na=rtcp-fb:126 nack pli\r\na=rtcp-fb:126 ccm fir\r\na=rtcp-fb:126 goog-remb\r\na=rtcp-fb:97 nack\r\na=rtcp-fb:97 nack pli\r\na=rtcp-fb:97 ccm fir\r\na=rtcp-fb:97 goog-remb\r\na=rtcp-mux\r\na=rtpmap:120 VP8/90000\r\na=rtpmap:121 VP9/90000\r\na=rtpmap:126 H264/90000\r\na=rtpmap:97 H264/90000\r\na=setup:active\r\na=ssrc:31255887 cname:{1515ec47-1be3-4792-a1fe-6721113c5f1a}\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=sendrecv\r\na=ice-pwd:4412b1a041e8ed570d852a709b2c2e71\r\na=ice-ufrag:44b54a76\r\na=mid:2\r\na=setup:active\r\na=sctp-port:5000\r\na=max-message-size:1073741823\r\n' },
+  to: 'PaK5xPhPSorwvxW2AAAF',
+  from: 't3VwjNfQpeQmusyjAAAE' }
+Recieved message :localCandidate from t3VwjNfQpeQmusyjAAAE
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:0 1 UDP 2122252543 192.168.56.1 56703 typ host',
+     sdpMid: '2',
+     sdpMLineIndex: 2,
+     usernameFragment: '464e29ab' },
+  to: 'PaK5xPhPSorwvxW2AAAF',
+  from: 't3VwjNfQpeQmusyjAAAE' }
+Recieved message :localCandidate from t3VwjNfQpeQmusyjAAAE
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:1 1 UDP 2122187007 192.168.1.130 56704 typ host',
+     sdpMid: '2',
+     sdpMLineIndex: 2,
+     usernameFragment: '464e29ab' },
+  to: 'PaK5xPhPSorwvxW2AAAF',
+  from: 't3VwjNfQpeQmusyjAAAE' }
+Recieved message :localCandidate from t3VwjNfQpeQmusyjAAAE
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:2 1 TCP 2105524479 192.168.56.1 9 typ host tcptype active',
+     sdpMid: '2',
+     sdpMLineIndex: 2,
+     usernameFragment: '464e29ab' },
+  to: 'PaK5xPhPSorwvxW2AAAF',
+  from: 't3VwjNfQpeQmusyjAAAE' }
+Recieved message :localCandidate from t3VwjNfQpeQmusyjAAAE
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:3 1 TCP 2105458943 192.168.1.130 9 typ host tcptype active',
+     sdpMid: '2',
+     sdpMLineIndex: 2,
+     usernameFragment: '464e29ab' },
+  to: 'PaK5xPhPSorwvxW2AAAF',
+  from: 't3VwjNfQpeQmusyjAAAE' }
+Recieved message :localCandidate from t3VwjNfQpeQmusyjAAAE
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: '',
+     sdpMid: '2',
+     sdpMLineIndex: 2,
+     usernameFragment: '464e29ab' },
+  to: 'PaK5xPhPSorwvxW2AAAF',
+  from: 't3VwjNfQpeQmusyjAAAE' }
+Recieved message :localCandidate from t3VwjNfQpeQmusyjAAAE
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:0 1 UDP 2122252543 192.168.56.1 56705 typ host',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: '464e29ab' },
+  to: 'PaK5xPhPSorwvxW2AAAF',
+  from: 't3VwjNfQpeQmusyjAAAE' }
+Recieved message :localCandidate from t3VwjNfQpeQmusyjAAAE
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:1 1 UDP 2122187007 192.168.1.130 56706 typ host',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: '464e29ab' },
+  to: 'PaK5xPhPSorwvxW2AAAF',
+  from: 't3VwjNfQpeQmusyjAAAE' }
+Recieved message :localCandidate from t3VwjNfQpeQmusyjAAAE
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:2 1 TCP 2105524479 192.168.56.1 9 typ host tcptype active',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: '464e29ab' },
+  to: 'PaK5xPhPSorwvxW2AAAF',
+  from: 't3VwjNfQpeQmusyjAAAE' }
+Recieved message :localCandidate from t3VwjNfQpeQmusyjAAAE
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:3 1 TCP 2105458943 192.168.1.130 9 typ host tcptype active',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: '464e29ab' },
+  to: 'PaK5xPhPSorwvxW2AAAF',
+  from: 't3VwjNfQpeQmusyjAAAE' }
+Recieved message :localCandidate from t3VwjNfQpeQmusyjAAAE
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:0 2 UDP 2122252542 192.168.56.1 56707 typ host',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: '464e29ab' },
+  to: 'PaK5xPhPSorwvxW2AAAF',
+  from: 't3VwjNfQpeQmusyjAAAE' }
+Recieved message :localCandidate from t3VwjNfQpeQmusyjAAAE
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:1 2 UDP 2122187006 192.168.1.130 56708 typ host',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: '464e29ab' },
+  to: 'PaK5xPhPSorwvxW2AAAF',
+  from: 't3VwjNfQpeQmusyjAAAE' }
+Recieved message :localCandidate from t3VwjNfQpeQmusyjAAAE
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:2 2 TCP 2105524478 192.168.56.1 9 typ host tcptype active',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: '464e29ab' },
+  to: 'PaK5xPhPSorwvxW2AAAF',
+  from: 't3VwjNfQpeQmusyjAAAE' }
+Recieved message :localCandidate from t3VwjNfQpeQmusyjAAAE
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:3 2 TCP 2105458942 192.168.1.130 9 typ host tcptype active',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: '464e29ab' },
+  to: 'PaK5xPhPSorwvxW2AAAF',
+  from: 't3VwjNfQpeQmusyjAAAE' }
+Recieved message :localCandidate from t3VwjNfQpeQmusyjAAAE
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: '',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: '464e29ab' },
+  to: 'PaK5xPhPSorwvxW2AAAF',
+  from: 't3VwjNfQpeQmusyjAAAE' }
+Recieved message :localCandidate from t3VwjNfQpeQmusyjAAAE
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:0 1 UDP 2122252543 192.168.56.1 56709 typ host',
+     sdpMid: '1',
+     sdpMLineIndex: 1,
+     usernameFragment: '464e29ab' },
+  to: 'PaK5xPhPSorwvxW2AAAF',
+  from: 't3VwjNfQpeQmusyjAAAE' }
+Recieved message :localCandidate from t3VwjNfQpeQmusyjAAAE
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:1 1 UDP 2122187007 192.168.1.130 56710 typ host',
+     sdpMid: '1',
+     sdpMLineIndex: 1,
+     usernameFragment: '464e29ab' },
+  to: 'PaK5xPhPSorwvxW2AAAF',
+  from: 't3VwjNfQpeQmusyjAAAE' }
+Recieved message :localCandidate from t3VwjNfQpeQmusyjAAAE
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:2 1 TCP 2105524479 192.168.56.1 9 typ host tcptype active',
+     sdpMid: '1',
+     sdpMLineIndex: 1,
+     usernameFragment: '464e29ab' },
+  to: 'PaK5xPhPSorwvxW2AAAF',
+  from: 't3VwjNfQpeQmusyjAAAE' }
+Recieved message :localCandidate from t3VwjNfQpeQmusyjAAAE
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:3 1 TCP 2105458943 192.168.1.130 9 typ host tcptype active',
+     sdpMid: '1',
+     sdpMLineIndex: 1,
+     usernameFragment: '464e29ab' },
+  to: 'PaK5xPhPSorwvxW2AAAF',
+  from: 't3VwjNfQpeQmusyjAAAE' }
+Recieved message :localCandidate from t3VwjNfQpeQmusyjAAAE
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:0 2 UDP 2122252542 192.168.56.1 56711 typ host',
+     sdpMid: '1',
+     sdpMLineIndex: 1,
+     usernameFragment: '464e29ab' },
+  to: 'PaK5xPhPSorwvxW2AAAF',
+  from: 't3VwjNfQpeQmusyjAAAE' }
+Recieved message :localCandidate from t3VwjNfQpeQmusyjAAAE
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:1 2 UDP 2122187006 192.168.1.130 56712 typ host',
+     sdpMid: '1',
+     sdpMLineIndex: 1,
+     usernameFragment: '464e29ab' },
+  to: 'PaK5xPhPSorwvxW2AAAF',
+  from: 't3VwjNfQpeQmusyjAAAE' }
+Recieved message :localCandidate from t3VwjNfQpeQmusyjAAAE
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:2 2 TCP 2105524478 192.168.56.1 9 typ host tcptype active',
+     sdpMid: '1',
+     sdpMLineIndex: 1,
+     usernameFragment: '464e29ab' },
+  to: 'PaK5xPhPSorwvxW2AAAF',
+  from: 't3VwjNfQpeQmusyjAAAE' }
+Recieved message :localCandidate from t3VwjNfQpeQmusyjAAAE
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: 'candidate:3 2 TCP 2105458942 192.168.1.130 9 typ host tcptype active',
+     sdpMid: '1',
+     sdpMLineIndex: 1,
+     usernameFragment: '464e29ab' },
+  to: 'PaK5xPhPSorwvxW2AAAF',
+  from: 't3VwjNfQpeQmusyjAAAE' }
+Recieved message :localCandidate from t3VwjNfQpeQmusyjAAAE
+DATA: [object Object]
+{ type: 'localCandidate',
+  data: 
+   { candidate: '',
+     sdpMid: '1',
+     sdpMLineIndex: 1,
+     usernameFragment: '464e29ab' },
+  to: 'PaK5xPhPSorwvxW2AAAF',
+  from: 't3VwjNfQpeQmusyjAAAE' }
+Recieved message :remoteCandidate from t3VwjNfQpeQmusyjAAAE
+DATA: [object Object]
+{ type: 'remoteCandidate',
+  data: 
+   { candidate: 'candidate:0 1 UDP 2122252543 192.168.56.1 56713 typ host',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: '44b54a76' },
+  to: 'PaK5xPhPSorwvxW2AAAF',
+  from: 't3VwjNfQpeQmusyjAAAE' }
+Recieved message :remoteCandidate from t3VwjNfQpeQmusyjAAAE
+DATA: [object Object]
+{ type: 'remoteCandidate',
+  data: 
+   { candidate: 'candidate:1 1 UDP 2122187007 192.168.1.130 56714 typ host',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: '44b54a76' },
+  to: 'PaK5xPhPSorwvxW2AAAF',
+  from: 't3VwjNfQpeQmusyjAAAE' }
+Recieved message :remoteCandidate from t3VwjNfQpeQmusyjAAAE
+DATA: [object Object]
+{ type: 'remoteCandidate',
+  data: 
+   { candidate: 'candidate:2 1 TCP 2105524479 192.168.56.1 9 typ host tcptype active',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: '44b54a76' },
+  to: 'PaK5xPhPSorwvxW2AAAF',
+  from: 't3VwjNfQpeQmusyjAAAE' }
+Recieved message :remoteCandidate from t3VwjNfQpeQmusyjAAAE
+DATA: [object Object]
+{ type: 'remoteCandidate',
+  data: 
+   { candidate: 'candidate:3 1 TCP 2105458943 192.168.1.130 9 typ host tcptype active',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: '44b54a76' },
+  to: 'PaK5xPhPSorwvxW2AAAF',
+  from: 't3VwjNfQpeQmusyjAAAE' }
+Recieved message :remoteCandidate from t3VwjNfQpeQmusyjAAAE
+DATA: [object Object]
+{ type: 'remoteCandidate',
+  data: 
+   { candidate: '',
+     sdpMid: '0',
+     sdpMLineIndex: 0,
+     usernameFragment: '44b54a76' },
+  to: 'PaK5xPhPSorwvxW2AAAF',
+  from: 't3VwjNfQpeQmusyjAAAE' }
+
